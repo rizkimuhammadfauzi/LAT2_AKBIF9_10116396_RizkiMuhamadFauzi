@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tollbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/ic_header">
+
+            <ImageView
+                android:id="@+id/leftArrow"
+                android:onClick="kembali"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="30dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Username"
+                android:layout_marginTop="65dp"/>
+
+            <EditText
+                android:id="@+id/edt2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email"
+                android:layout_below="@+id/edt1"/>
+
+            <EditText
+                android:id="@+id/edt3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                android:hint="Phone Number"
+                android:layout_below="@+id/edt2"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogrup"
+                android:layout_below="@+id/edt3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginLeft="112dp"/>
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/sp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="180dp"
+                android:layout_below="@+id/edt3"
+                android:layout_marginTop="45dp"
+                android:entries="@array/list">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/sp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="195dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/edt3"
+                android:layout_marginTop="45dp"
+                android:entries="@array/list2">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/edt4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_below="@+id/sp2"/>
+
+            <EditText
+                android:id="@+id/edt5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:hint="Re-Type Password"
+                android:layout_below="@+id/edt4"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogrup2"
+                android:layout_below="@+id/edt5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rd4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organitation"
+                    android:layout_marginLeft="90dp"/>
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/sp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/radiogrup2"
+                android:entries="@array/list3"
+                android:layout_marginTop="5dp">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/edt6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:hint="Home Adress"
+                android:layout_below="@+id/sp3"/>
+
+            <EditText
+                android:id="@+id/edt7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:hint="Default Location"
+                android:layout_below="@+id/edt6"
+                android:drawableRight="@drawable/ic_placeholder"/>
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/edt7"
+                android:text="Agree with Terms and Conditions"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:onClick="register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnlogin2"
+                android:layout_below="@+id/cb1"
+                android:text="REGISTER"
+                android:textColor="@color/colorBg"
+                android:textSize="15dp"
+                android:layout_marginBottom="15dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyActivity"
+    android:background="@color/colorBg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify Your Account"
+            android:textSize="30dp"
+            android:textColor="#f4f4f4"
+            android:gravity="center"
+            android:layout_marginTop="170dp"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We have send verification code to your email"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt1"
+            android:textColor="#f4f4f4"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="#f4f4f4"
+            android:layout_marginTop="280dp"
+            android:hint="Enter verification code here..."
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:onClick="verify"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/btnlogin"
+            android:layout_below="@+id/edt2"
+            android:text="Verify"
+            android:textColor="#fff"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:textColor="#fff"
+            android:text="@string/text3"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

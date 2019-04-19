@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlmostActivity"
+    android:background="@color/colorBg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Almost There"
+            android:textSize="30dp"
+            android:textColor="#f4f4f4"
+            android:gravity="center"
+            android:layout_marginTop="170dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thank you for registering withus. one more \nstep, you need to check your email \nto active your account"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt1"
+            android:textColor="#f4f4f4"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:onClick="verify"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btnlogin"
+            android:layout_below="@+id/edt2"
+            android:text="Verify"
+            android:textColor="#fff"
+            android:textSize="15dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
